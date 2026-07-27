@@ -1,0 +1,6 @@
+{
+  "name": "Motion & Shadcn Component Library",
+  "description": "A clean, customizable React component library built with Tailwind CSS, Motion animations, and shadcn design primitives.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
