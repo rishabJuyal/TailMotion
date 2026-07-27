@@ -19,14 +19,7 @@ import DynamicRunner from "./DynamicRunner";
 import { generateComponentCode } from "../lib/codeGenerator";
 import { cn } from "../lib/utils";
 
-interface ComponentCardProps {
-  key?: any;
-  component: any;
-  globalTheme?: any;
-  onDeleteCustom?: (id: string) => void;
-}
-
-export default function ComponentCard({ component, globalTheme = {}, onDeleteCustom }: ComponentCardProps) {
+export default function ComponentCard({ component, globalTheme = {}, onDeleteCustom }) {
   const [propsState, setPropsState] = useState(component.defaultProps || {});
   const [activeTab, setActiveTab] = useState(component.isCustom ? "code" : "customize"); // 'customize' | 'code'
   const [copied, setCopied] = useState(false);
